@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.title{
+    font-size: 50px;
+    color: sienna;
+    padding-left: 5%;
+}
+
+.navbar{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    padding-right: 15%;
+    align-self: center;
+    background-color: rgba(0,0,0,0.2);
+}
+.logo{
+    padding-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+nav{
+    text-align: right;
+    flex: 1;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+    align-items: center;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20;
+    font-weight: bold;
+}
+.navbar ul li::after{
+
+    content: '';
+    transition: 250ms;
+    background: sienna;
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0px;
+    bottom: -5px;
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+
+
+h1{
+    color: white;
+    font-size: 100px;
+    padding-left: 300px;
+    margin-right: 100px;
+}
+
+p{
+    color: snow;
+    font-size: 15px;
+    line-height: 15px;
+    padding-right: 500px;
+}
+
+.row{
+    display: flex;
+    height: 78%;
+    align-items: center;
+
+}
+
+.col{
+    float: basis 50%;
+}
+
+
+.card{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 15px 15px;
+    background-position: center;
+    background-size: cover;
+    transition-duration: 0.5s;
+
+}
+
+.card:hover{
+    transform: scale(1.2)
+}
+
+.card1{
+    background-image: url(../images/king.jpg);
+}
+.card2{
+    background-image: url(../images/king.jpg);
+}
+.card3{
+    background-image: url(../images/king.jpg);
+}
+.card4{
+    background-image: url(../images/king.jpg);
+}
+.card5{
+    background-image: url(../images/king.jpg);
+}
+.card6{
+    background-image: url(../images/king.jpg);
+}

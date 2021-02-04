@@ -114,25 +114,58 @@ p{
 
 }
 
+
 .card:hover{
-    transform: scale(1.2)
+    transform: scale(1.2);
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
 .card1{
     background-image: url(../images/king.jpg);
+
+}
+.card1:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/king.jpg);
+
 }
 .card2{
-    background-image: url(../images/king.jpg);
+    background-image: url(../images/queen.png);
+}
+.card2:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/queen.png);
+
 }
 .card3{
-    background-image: url(../images/king.jpg);
+    background-image: url(../images/rook.png);
+}
+.card3:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/rook.png);
+
 }
 .card4{
-    background-image: url(../images/king.jpg);
+    background-image: url(../images/bishop.png);
+}
+.card4:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/bishop.png);
+
 }
 .card5{
-    background-image: url(../images/king.jpg);
+    background-image: url(../images/knight.jpg);
+}
+.card5:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/knight.jpg);
+
 }
 .card6{
-    background-image: url(../images/king.jpg);
+    background-image: url(../images/pawn.png);
+}
+.card6:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/pawn.png);
+
+}
+.hide{
+    display: none;
+}
+ .card.card1:hover + .hide {
+    display:block;
 }

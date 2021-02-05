@@ -9,6 +9,8 @@ body{
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/background.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     
 }
 
@@ -124,48 +126,80 @@ p{
     background-image: url(../images/king.jpg);
 
 }
-.card1:hover{
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/king.jpg);
 
-}
 .card2{
     background-image: url(../images/queen.png);
 }
-.card2:hover{
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/queen.png);
 
-}
 .card3{
     background-image: url(../images/rook.png);
 }
-.card3:hover{
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/rook.png);
 
-}
 .card4{
     background-image: url(../images/bishop.png);
 }
-.card4:hover{
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/bishop.png);
 
-}
 .card5{
     background-image: url(../images/knight.jpg);
 }
-.card5:hover{
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/knight.jpg);
 
-}
 .card6{
     background-image: url(../images/pawn.png);
 }
-.card6:hover{
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/pawn.png);
 
-}
 .hide{
     display: none;
 }
- .card.card1:hover + .hide {
-    display:block;
+
+
+
+
+
+article{
+    max-width: 1200px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 24px;
+    padding: 1.5%;
+    border-radius: 10px;
+    float: left;
 }
+
+
+aside {
+    margin-top: 50px;
+    margin-right: 10%;
+    padding: 2%;
+    float:right;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+
+}
+
+h3{
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(136, 45, 23,0.5);
+    bottom:0;
+    width:100%;
+    height:80px; 
+    clear: both;
+    position: relative;
+  }
+
+  .learnMore{
+      margin-top: 17px;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: black;
+      color: white;
+  }
+  .learnMore:hover{
+      transform: scale(1.2);
+      
+  }

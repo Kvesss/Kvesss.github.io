@@ -79,7 +79,22 @@ h1{
     color: white;
     font-size: 100px;
     padding-left: 300px;
-    margin-right: 100px;
+    margin-right: 150px;
+}
+
+.btndownload{
+    padding: 18px;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+    margin-top: auto;
+    margin-right: 150px;
+    margin-left: 340px;
+}
+
+.btndownload:hover{
+    transform: scale(1.1);
+    color: white;
+    background: sienna;
 }
 
 p{
@@ -153,8 +168,6 @@ p{
 
 
 
-
-
 article{
     max-width: 1200px;
     background-color: rgba(0,0,0,0.5);
@@ -167,6 +180,9 @@ article{
     float: left;
 }
 
+.moderngame{
+    margin-bottom: 50px;
+}
 
 
 
@@ -182,6 +198,10 @@ aside {
 
 h3{
     font-style: italic;
+}
+
+.endgame{
+    margin-bottom: 50px;
 }
 
 footer {
@@ -200,6 +220,7 @@ footer {
       border-radius: 10px;
       background-color: black;
       color: white;
+      transition-duration: 0.5s;
 }
 .learnMore:hover{
       transform: scale(1.2);

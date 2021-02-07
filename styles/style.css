@@ -1,6 +1,22 @@
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+
 *{
     margin: 0;
     padding: 0;
+    max-height: 90%;
+
 }
 
 body{
@@ -11,13 +27,13 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
 }
 
 .title{
     font-size: 50px;
     color: sienna;
     padding-left: 5%;
+    max-width: 50%;
 }
 
 .navbar{
@@ -27,6 +43,8 @@ body{
     padding-right: 15%;
     align-self: center;
     background-color: rgba(0,0,0,0.2);
+    max-width: 100%;
+    
 }
 .logo{
     padding-left: 4%;
@@ -40,6 +58,9 @@ body{
 nav{
     text-align: right;
     flex: 1;
+    z-index: 1;
+    max-width: 100%;
+
 }
 
 .navbar ul li{
@@ -48,6 +69,7 @@ nav{
     margin-left: 50px;
     align-items: center;
     position: relative;
+    z-index: 2;
 }
 
 .navbar ul li a{
@@ -108,7 +130,6 @@ p{
     display: flex;
     height: 78%;
     align-items: center;
-
 }
 
 .col{
@@ -128,6 +149,7 @@ p{
     background-position: center;
     background-size: cover;
     transition-duration: 0.5s;
+    z-index: 0;
 
 }
 
@@ -169,7 +191,7 @@ p{
 
 
 article{
-    max-width: 1200px;
+    width: 1200px;
     background-color: rgba(0,0,0,0.5);
     color: white;
     margin-left: 50px;
@@ -178,6 +200,8 @@ article{
     padding: 1.5%;
     border-radius: 10px;
     float: left;
+    max-width: 100%;
+
 }
 
 .moderngame{
@@ -193,6 +217,7 @@ aside {
     float:right;
     background-color: rgba(0,0,0,0.5);
     border-radius: 10px;
+
 
 }
 
@@ -212,6 +237,7 @@ footer {
     height:80px; 
     clear: both;
     position: relative;
+    max-width: 100%;
 }
 
 .learnMore{
@@ -231,3 +257,12 @@ figcaption{
     color: white;
     font-style: italic;
 }
+
+.castling{
+    padding-left: 50px;
+}
+
+/* .col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+} */

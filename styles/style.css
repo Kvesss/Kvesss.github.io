@@ -46,13 +46,24 @@ nav{
     flex: 1;
     z-index: 1;
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
+ul {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+}
+
+ul li{
+    margin-left: 50px;
 }
 
 .navbar ul li{
     list-style: none;
-    display: inline-block;
-    margin-left: 50px;
     align-items: center;
     position: relative;
     z-index: 2;
@@ -88,15 +99,19 @@ h1{
     font-size: 6em;
     padding-left: 300px;
     margin-right: 150px;
+    margin-top: 100px;
 }
 
 .btndownload{
-    padding: 18px;
+    height: 4em;
+    width: 20em;
     border-radius: 20px;
     transition-duration: 0.5s;
-    margin-top: auto;
-    margin-right: 150px;
+    margin-top: 0;
+    margin-right: 160px;
     margin-left: 340px;
+    cursor: pointer;
+    align-content: initial;
 }
 
 .btndownload:hover{
@@ -114,7 +129,7 @@ p{
 
 .row{
     display: flex;
-    height: 78%;
+    height: 80%;
     align-items: center;
 }
 
@@ -124,9 +139,8 @@ p{
 .card{
     width: 250px;
     height: 250px;
-    display: inline-block;
     border-radius: 15px;
-    padding: 20px 20px;
+    padding: 30px 30px;
     box-sizing: border-box;
     cursor: pointer;
     margin: 15px 15px;
@@ -146,27 +160,50 @@ p{
 
 .card1{
     background-image: url(../images/king.jpg);
-
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
 
 .card2{
     background-image: url(../images/queen.png);
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
 
 .card3{
     background-image: url(../images/rook.png);
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
 
 .card4{
     background-image: url(../images/bishop.png);
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
 }
 
 .card5{
     background-image: url(../images/knight.jpg);
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
 }
 
 .card6{
     background-image: url(../images/pawn.png);
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
 }
 
 .hide{
@@ -243,4 +280,11 @@ figcaption{
 
 .castling{
     padding-left: 50px;
+}
+
+.col{
+    display: grid;
+    grid-template-columns: 250px, 250px, 250px;
+    grid-template-rows: 250px 250px;
+    row-gap: 1em;
 }

@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+.index{
+    max-height: 90%;
+}
 
 body{
     height: 100vh;

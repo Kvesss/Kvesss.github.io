@@ -50,13 +50,6 @@ nav{
     flex-direction: column;
 }
 
-ul {
-    display: flex;
-    flex-direction: row; 
-    flex-wrap: wrap;
-    justify-content: flex-end;
-
-}
 
 ul li{
     margin-left: 50px;
@@ -67,6 +60,8 @@ ul li{
     align-items: center;
     position: relative;
     z-index: 2;
+    display: inline-block;
+    margin-left: 3em;
 }
 
 .navbar ul li a{
